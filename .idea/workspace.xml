@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53925028-35c7-42d1-9fc5-f5cfc139d394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-config/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20191022/APPOINTMENTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!@@@@@@@@@@@@@@@@@@@@@@@@@@@.txt" beforeDir="false" />
+    <list default="true" id="53925028-35c7-42d1-9fc5-f5cfc139d394" name="Default Changelist" comment="restructured directory, corrected bootstrap.properties on all services">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-Service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail-api/src/main/java/com/company/retailapi/controller/GameStoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/retail-api/src/main/java/com/company/retailapi/controller/GameStoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/retail-api/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory-Service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-Service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/LevelUpServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/LevelUpServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/controller/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/controller/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/controller/LevelUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/controller/LevelUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/dao/LevelUpDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/dao/LevelUpDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/dao/LevelUpDaoJdbcTemplateImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/dao/LevelUpDaoJdbcTemplateImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/exceptions/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/models/LevelUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/models/LevelUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/serviceLayer/LevelUpServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/serviceLayer/LevelUpServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/util/messages/LevelUpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/util/messages/LevelUpMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/java/com/company/LevelUpService/viewModel/LevelUpViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/main/java/com/company/LevelUpService/viewModel/LevelUpViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/main/resources/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/test/java/com/company/LevelUpService/LevelUpServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/test/java/com/company/LevelUpService/LevelUpServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/test/java/com/company/LevelUpService/controller/LevelUpControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/test/java/com/company/LevelUpService/controller/LevelUpControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/test/java/com/company/LevelUpService/dao/LevelUpDaoJdbcTemplateImpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/test/java/com/company/LevelUpService/dao/LevelUpDaoJdbcTemplateImpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/test/java/com/company/LevelUpService/serviceLayer/LevelUpServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/test/java/com/company/LevelUpService/serviceLayer/LevelUpServiceLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levupserv2/LevelUp-Service/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp-Service/src/test/java/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/retail-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail-api/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/retail-api/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +55,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -54,10 +77,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin-api/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Invoice-service/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -67,12 +91,6 @@
       <recent name="com.company.productservice.service" />
       <recent name="com.company.productservice.DAO" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jordan\Desktop\FINAL CAPSTONE\LevelUp-Service\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.retailapi.messages" />
       <recent name="com.company.retailapi.controller" />
@@ -81,11 +99,19 @@
       <recent name="com.company.Invoiceservice.serviceLayer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jordan\Desktop\gamestore-project\Invoice-service\src\main\resources" />
       <recent name="C:\Users\Jordan\Desktop\Jordan-Rosales-Java-S1\FINAL CAPSTONE\admin-api\src\main\resources" />
       <recent name="C:\Users\Jordan\Desktop\Jordan-Rosales-Java-S1\FINAL CAPSTONE" />
       <recent name="C:\Users\Jordan\Desktop\FINAL CAPSTONE\retail-api\src\main\java\com\company\retailapi\model" />
       <recent name="C:\Users\Jordan\Desktop\FINAL CAPSTONE\Invoice-service\src\main\java\com\company\Invoiceservice" />
-      <recent name="C:\Users\Jordan\Desktop\FINAL CAPSTONE\Invoice-service\src\test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jordan\Desktop\gamestore-project\" />
+      <recent name="C:\Users\Jordan\Desktop\gamestore-project\Invoice-service\src\main\resources" />
+      <recent name="C:\Users\Jordan\Desktop\FINAL CAPSTONE\LevelUp-Service\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -275,6 +301,7 @@
       <workItem from="1576502932246" duration="4860000" />
       <workItem from="1576509171732" duration="39622000" />
       <workItem from="1591907293234" duration="21096000" />
+      <workItem from="1592013065423" duration="3674000" />
     </task>
     <servers />
   </component>
@@ -286,10 +313,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="restructured directory, corrected bootstrap.properties on all services" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructured directory, corrected bootstrap.properties on all services" />
   </component>
 </project>

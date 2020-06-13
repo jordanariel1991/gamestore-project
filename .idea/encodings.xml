@@ -3,12 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Inventory-Service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Invoice-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Queue-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LevelUp-Service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/customer-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/levupserv2/LevelUp-Service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/queue-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/retail-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-registry" charset="UTF-8" />
   </component>

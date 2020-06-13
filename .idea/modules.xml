@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/FINAL CAPSTONE.iml" filepath="$PROJECT_DIR$/.idea/FINAL CAPSTONE.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inventory-Service/Inventory-service.iml" filepath="$PROJECT_DIR$/Inventory-Service/Inventory-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Invoice-service/Invoice-service.iml" filepath="$PROJECT_DIR$/Invoice-service/Invoice-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/levupserv2/LevelUp-Service/LevelUp-service.iml" filepath="$PROJECT_DIR$/levupserv2/LevelUp-Service/LevelUp-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LevelUp-Service/LevelUp-service.iml" filepath="$PROJECT_DIR$/LevelUp-Service/LevelUp-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin-api/admin-api.iml" filepath="$PROJECT_DIR$/admin-api/admin-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/cloud-config/cloud-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-service.iml" />
