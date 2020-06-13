@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/LevelUp-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Invoice-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Inventory-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/levupserv2/LevelUp-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/retail-api/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-api/pom.xml" />
+        <option value="$PROJECT_DIR$/service-registry/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

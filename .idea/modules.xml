@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LevelUp-Service/AfsanaHussainU1Capstone.iml" filepath="$PROJECT_DIR$/LevelUp-Service/AfsanaHussainU1Capstone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FINAL CAPSTONE.iml" filepath="$PROJECT_DIR$/.idea/FINAL CAPSTONE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inventory-Service/Inventory-service.iml" filepath="$PROJECT_DIR$/Inventory-Service/Inventory-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Invoice-service/Invoice-service.iml" filepath="$PROJECT_DIR$/Invoice-service/Invoice-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/levupserv2/LevelUp-Service/LevelUp-service.iml" filepath="$PROJECT_DIR$/levupserv2/LevelUp-Service/LevelUp-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-api/admin-api.iml" filepath="$PROJECT_DIR$/admin-api/admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/cloud-config/cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-service/product-service.iml" filepath="$PROJECT_DIR$/product-service/product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retail-api/retail-api.iml" filepath="$PROJECT_DIR$/retail-api/retail-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
+    </modules>
+  </component>
+</project>
