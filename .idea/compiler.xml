@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-registry" />
-        <module name="Invoice-service" />
+        <module name="retail-api" />
         <module name="product-service" />
         <module name="customer-service" />
-        <module name="Inventory-service" />
-        <module name="retail-api" />
-        <module name="LevelUp-service" />
+        <module name="Invoice-service" />
         <module name="admin-api" />
+        <module name="Inventory-service" />
+        <module name="level-up-service" />
+        <module name="LevelUp-service" />
         <module name="AfsanaHussainU1Capstone" />
         <module name="cloud-config" />
       </profile>
@@ -25,6 +26,7 @@
       <module name="customer-service" target="1.8" />
       <module name="Inventory-service" target="1.8" />
       <module name="Invoice-service" target="1.8" />
+      <module name="level-up-service" target="1.8" />
       <module name="LevelUp-service" target="1.8" />
       <module name="product-service" target="1.8" />
       <module name="Queue-service" target="1.8" />
@@ -42,6 +44,7 @@
       <module name="admin-api" options="-parameters" />
       <module name="cloud-config" options="-parameters" />
       <module name="customer-service" options="-parameters" />
+      <module name="level-up-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
       <module name="retail-api" options="-parameters" />
       <module name="service-registry" options="-parameters" />

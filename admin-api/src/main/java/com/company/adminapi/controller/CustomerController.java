@@ -1,10 +1,8 @@
-package com.company.customerservice.controller;
+package com.company.adminapi.controller;
 
-
-import com.company.customerservice.exception.NotFoundException;
-import com.company.customerservice.service.ServiceLayer;
-import com.company.customerservice.viewModels.CustomerView;
-
+import com.company.adminapi.exception.NotFoundException;
+import com.company.adminapi.service.ServiceLayer;
+import com.company.adminapi.views.CustomerView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/customers")
 public class CustomerController {
-
-    //todo - add caching at the method level
 
     @Autowired
     ServiceLayer serviceLayer;
@@ -51,7 +47,7 @@ public class CustomerController {
         }
         CustomerView toUpdate = serviceLayer.fetchCustomer(customerView.getId());
         if (toUpdate == null) throw new NotFoundException("no customer matches the given id " + id);
-        serviceLayer.updateCustomer(customerView);
+        serviceLayer.updateCustomer(id,customerView);
     }
 
     @DeleteMapping("{id}")

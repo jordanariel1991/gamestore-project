@@ -30,7 +30,7 @@ public class InventoryController {
     @Cacheable
     @GetMapping("/{id}")//Another way to set the Rest API Get mapping
     @ResponseStatus(HttpStatus.OK)
-    public InventoryViewmodel getinventoryByid(@PathVariable("id") int inventoryId) {
+    public InventoryViewmodel getInventoryById(@PathVariable("id") int inventoryId) {
         InventoryViewmodel inventoryVM = inventoryServiceLayer.findInventoryById(inventoryId);
         if (inventoryVM == null)
             throw new NotFoundException("console could not be retrieved for id " + inventoryId);
@@ -52,7 +52,7 @@ public class InventoryController {
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateinventory(@PathVariable("id") int inventoryId, @RequestBody @Valid InventoryViewmodel inventoryViewmodel ) {
+    public void updateInventory(@PathVariable("id") int inventoryId, @RequestBody @Valid InventoryViewmodel inventoryViewmodel ) {
         if (inventoryViewmodel.getInventoryId()==0)
             inventoryViewmodel.setInventoryId(inventoryId);
         if(inventoryId != inventoryViewmodel.getInventoryId()) {
