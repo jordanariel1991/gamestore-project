@@ -6,7 +6,7 @@ import com.company.Invoiceservice.Dao.InvoiceItemDao;
 import com.company.Invoiceservice.Dao.InvoiceItemDaoJdbcTemplateImple;
 import com.company.Invoiceservice.models.Invoice;
 import com.company.Invoiceservice.models.InvoiceItem;
-import com.company.Invoiceservice.viewmodels.InvoiceVM;
+import com.company.Invoiceservice.viewmodels.InvoiceView;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -94,14 +94,14 @@ public class InvoiceServiceLayerTest {
         List<InvoiceItem> invoiceItemList = new ArrayList<>();
         invoiceItemList.add(invItem);
 
-        InvoiceVM invoiceVM = new InvoiceVM();
-        invoiceVM.setCustomerId(1);
-        invoiceVM.setPurchaseDate(LocalDate.of(2012, 12, 12));
-        invoiceVM.setInvItemList(invoiceItemList);
+        InvoiceView invoiceView = new InvoiceView();
+        invoiceView.setCustomerId(1);
+        invoiceView.setPurchaseDate(LocalDate.of(2012, 12, 12));
+        invoiceView.setInvItemList(invoiceItemList);
 
-        InvoiceVM fromSL = service.addInvoice(invoiceVM);
+        InvoiceView fromSL = service.addInvoice(invoiceView);
 
-        assertEquals(invoiceVM, fromSL);
+        assertEquals(invoiceView, fromSL);
     }
     @Test
     public void shouldFindInvoice() {
@@ -115,15 +115,15 @@ public class InvoiceServiceLayerTest {
         List<InvoiceItem> invoiceItemList = new ArrayList<>();
         invoiceItemList.add(invoiceItem);
 
-        InvoiceVM invoiceVM = new InvoiceVM();
-        invoiceVM.setInvoiceId(1);
-        invoiceVM.setCustomerId(1);
-        invoiceVM.setPurchaseDate(LocalDate.of(2012, 12, 12));
-        invoiceVM.setInvItemList(invoiceItemList);
+        InvoiceView invoiceView = new InvoiceView();
+        invoiceView.setInvoiceId(1);
+        invoiceView.setCustomerId(1);
+        invoiceView.setPurchaseDate(LocalDate.of(2012, 12, 12));
+        invoiceView.setInvItemList(invoiceItemList);
 
-        InvoiceVM fromSL = service.getInv(1);
+        InvoiceView fromSL = service.getInv(1);
 
-        assertEquals(invoiceVM, fromSL);
+        assertEquals(invoiceView, fromSL);
     }
 
     @Test
@@ -137,11 +137,11 @@ public class InvoiceServiceLayerTest {
         List<InvoiceItem> invoiceItemList = new ArrayList<>();
         invoiceItemList.add(invoiceItem);
 
-        InvoiceVM invoiceVM = new InvoiceVM();
-        invoiceVM.setInvoiceId(1);
-        invoiceVM.setCustomerId(1);
-        invoiceVM.setPurchaseDate(LocalDate.of(2012, 12, 12));
-        invoiceVM.setInvItemList(invoiceItemList);
+        InvoiceView invoiceView = new InvoiceView();
+        invoiceView.setInvoiceId(1);
+        invoiceView.setCustomerId(1);
+        invoiceView.setPurchaseDate(LocalDate.of(2012, 12, 12));
+        invoiceView.setInvItemList(invoiceItemList);
 
 
         assertEquals(1, service.getAllInv().size());

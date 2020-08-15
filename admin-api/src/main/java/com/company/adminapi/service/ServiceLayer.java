@@ -1,9 +1,11 @@
 package com.company.adminapi.service;
 
+import com.company.adminapi.DTO.Invoice;
 import com.company.adminapi.util.feign.*;
 import com.company.adminapi.views.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -109,22 +111,27 @@ public class ServiceLayer {
     }
 
     public List<InvoiceView> getInvoiceByCustId(int custId) {
-
+      return invoiceClient.getInvoicesByCustomerId(custId);
     }
 
     public void deleteInvoice(int id) {
+        invoiceClient.deleteInvoice(id);
     }
 
-    public InvoiceView addInvoice(InvoiceView invoiceView) {
+    public InvoiceView addInvoice(Invoice invoice) {
+       return invoiceClient.addInvoice(invoice);
     }
 
     public InvoiceView updateInvoice(InvoiceView invoiceView) {
+        return invoiceClient.updateInvoice(invoiceView);
     }
 
     public List<InvoiceView> getAllInvoices() {
+        return invoiceClient.getAllInvoices();
     }
 
     public InvoiceView getInvoice(int id) {
+        return invoiceClient.getInvoiceById(id);
     }
 
     //todo need to incorporate methods for product/invoice endpoint. see the feign for productClient

@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53925028-35c7-42d1-9fc5-f5cfc139d394" name="Default Changelist" comment="restructured directory, corrected bootstrap.properties on all services">
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/ControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/LevelUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/service/ServiceLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/CustomerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/InventoryView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/InvoiceItemView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/InvoiceView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/LevelUpView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/views/ProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LevelUp-Service/level-up-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory-Service/src/main/java/com/company/InventoryService/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-Service/src/main/java/com/company/InventoryService/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory-Service/src/main/java/com/company/InventoryService/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-Service/src/main/java/com/company/InventoryService/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/AdminApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/AdminApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/CustController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/InvoiceServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/InvoiceServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/controller/InvoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/serviceLayer/InvoiceServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/serviceLayer/InvoiceServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/viewmodels/InvoiceVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/main/java/com/company/Invoiceservice/viewmodels/InvoiceView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoice-service/src/test/java/com/company/Invoiceservice/serviceLayer/InvoiceServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice-service/src/test/java/com/company/Invoiceservice/serviceLayer/InvoiceServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/InvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/LevelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/ProdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/CustClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/CustClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/InventoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/InventoryClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/LvlClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/LvlClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/ProdClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/ProdClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/company/customerservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/company/customerservice/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/LevelUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller/LevelUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/service/ServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/InvoiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/util/feign/InvoiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail-api/src/main/java/com/company/retailapi/RetailApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/retail-api/src/main/java/com/company/retailapi/RetailApiApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +60,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin-api/src/main/java/com/company/adminapi/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -303,7 +286,12 @@
       <workItem from="1591907293234" duration="21096000" />
       <workItem from="1592013065423" duration="3674000" />
       <workItem from="1592224732228" duration="253000" />
-      <workItem from="1592225044125" duration="11779000" />
+      <workItem from="1592225044125" duration="12094000" />
+      <workItem from="1595018326283" duration="4735000" />
+      <workItem from="1597080598886" duration="3655000" />
+      <workItem from="1597099097518" duration="578000" />
+      <workItem from="1597427879787" duration="584000" />
+      <workItem from="1597428586967" duration="5909000" />
     </task>
     <servers />
   </component>
@@ -339,9 +327,28 @@
       <screen x="0" y="23" width="1745" height="1097" />
     </state>
     <state x="720" y="487" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1745.1097@0.23.1745.1097" timestamp="1592225062995" />
-    <state x="548" y="424" key="com.intellij.ide.util.TipDialog" timestamp="1592224734685">
-      <screen x="0" y="23" width="1743" height="1097" />
+    <state x="1458" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597523637629">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1458" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1080.23.1080.2537/0.23.2560.1417/513.1463.1792.1033/2560.23.1080.2537@0.23.2560.1417" timestamp="1597523637629" />
+    <state x="779" y="314" key="SettingsEditor" timestamp="1595023562984">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="779" y="313" key="SettingsEditor/2560.0.1080.2560/-1080.0.1080.2560/0.0.2560.1440/-2872.404.1792.1120@0.0.2560.1440" timestamp="1595020210851" />
+    <state x="779" y="314" key="SettingsEditor/2560.23.1080.2537/-1080.23.1080.2537/0.23.2560.1340/-2872.427.1792.1097@0.23.2560.1340" timestamp="1595023562984" />
+    <state x="805" y="513" key="com.intellij.ide.util.TipDialog" timestamp="1595018327541">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
     <state x="548" y="424" key="com.intellij.ide.util.TipDialog/0.23.1743.1097@0.23.1743.1097" timestamp="1592224734685" />
+    <state x="805" y="513" key="com.intellij.ide.util.TipDialog/2560.23.1080.2537/-1080.23.1080.2537/0.23.2560.1340/-2872.427.1792.1097@0.23.2560.1340" timestamp="1595018327541" />
+    <state x="-1082" y="35" width="1121" height="2505" maximized="true" key="dock-window-1" timestamp="1597100603768">
+      <screen x="-1080" y="23" width="1080" height="2537" />
+    </state>
+    <state x="2560" y="0" width="1080" height="2560" key="dock-window-1/2560.0.1080.2560/-1080.0.1080.2560/0.0.2560.1440/-2872.404.1792.1120@0.0.2560.1440" timestamp="1597081817299" />
+    <state x="-1082" y="35" width="1121" height="2505" maximized="true" key="dock-window-1/640.1463.1792.1026/0.23.2560.1417/-1080.23.1080.2537@0.23.2560.1417" timestamp="1597100603768" />
+    <state x="945" y="331" key="search.everywhere.popup" timestamp="1595020245893">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="331" key="search.everywhere.popup/2560.0.1080.2560/-1080.0.1080.2560/0.0.2560.1440/-2872.404.1792.1120@0.0.2560.1440" timestamp="1595020245893" />
   </component>
 </project>

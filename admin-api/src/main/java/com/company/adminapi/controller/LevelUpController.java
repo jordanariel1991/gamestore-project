@@ -57,6 +57,6 @@ public class LevelUpController {
             throw new IllegalArgumentException("Levelup ID on path must match the ID in the Levelup object");
 
         }
-        serviceLayer.updateLevelUp(levelUpView);
+        serviceLayer.updateLevelUp(id, levelUpView);
     }
 }

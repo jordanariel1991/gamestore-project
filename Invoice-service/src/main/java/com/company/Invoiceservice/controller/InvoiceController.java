@@ -2,7 +2,7 @@ package com.company.Invoiceservice.controller;
 
 
 import com.company.Invoiceservice.serviceLayer.InvoiceServiceLayer;
-import com.company.Invoiceservice.viewmodels.InvoiceVM;
+import com.company.Invoiceservice.viewmodels.InvoiceView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
@@ -27,7 +27,7 @@ public class InvoiceController {
 
     @GetMapping(value = "/customer/{customerId}")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<InvoiceVM> getInvByCust(@PathVariable int custId){
+    public List<InvoiceView> getInvByCust(@PathVariable int custId){
         return invoiceServiceLayer.getInvByCustId(custId);
     }
 
@@ -41,13 +41,13 @@ public class InvoiceController {
     @CachePut
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public InvoiceVM addInvoice(@RequestBody @Valid InvoiceVM ivm){
+    public InvoiceView addInvoice(@RequestBody @Valid InvoiceView ivm){
         return invoiceServiceLayer.addInvoice(ivm);
     }
     @CacheEvict(key = "#id")
     @PutMapping(value = "/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public InvoiceVM updateInv(@RequestBody @Valid InvoiceVM ivm, @PathVariable int invId) {
+    public InvoiceView updateInv(@RequestBody @Valid InvoiceView ivm, @PathVariable int invId) {
         if(invId!=ivm.getInvoiceId()){
             throw new IllegalArgumentException("InvId has to match the request body");
         }
@@ -55,13 +55,13 @@ public class InvoiceController {
     }
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public  List<InvoiceVM>getAllInv(){
+    public  List<InvoiceView>getAllInv(){
         return invoiceServiceLayer.getAllInv();
     }
     @Cacheable
     @GetMapping(value = "/{id}")
     @ResponseStatus(value = HttpStatus.OK)
-    public InvoiceVM getInvoice(@PathVariable int invId){
+    public InvoiceView getInvoice(@PathVariable int invId){
         return invoiceServiceLayer.getInv(invId);
     }
 }

@@ -1,6 +1,8 @@
 package com.company.adminapi.util.feign;
 
 import com.company.adminapi.DTO.Invoice;
+import com.company.adminapi.views.InvoiceView;
+import com.fasterxml.jackson.databind.util.ViewMatcher;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,14 +15,23 @@ import java.util.List;
 public interface InvoiceClient {
 
     @RequestMapping(value = "/invoices", method = RequestMethod.POST)
-    public Invoice submitInvoice(@RequestBody Invoice invoice);
+    InvoiceView addInvoice(@RequestBody Invoice invoice);
 
     @RequestMapping(value = "/invoices/{id}", method = RequestMethod.GET)
-    public Invoice getInvoiceById(@PathVariable int id);
+    InvoiceView getInvoiceById(@PathVariable int id);
 
     @RequestMapping(value = "/invoices", method = RequestMethod.GET)
-    public List<Invoice> getAllInvoices();
+    List<InvoiceView> getAllInvoices();
 
     @RequestMapping(value = "/invoices/customer/{id}", method = RequestMethod.GET)
-    public List<Invoice> getInvoicesByCustomerId(@PathVariable int id);
+    List<InvoiceView> getInvoicesByCustomerId(@PathVariable int id);
+
+    @RequestMapping(value = "invoices/{id}", method = RequestMethod.DELETE)
+    void deleteInvoice(@PathVariable int id);
+
+//    @RequestMapping(value = "invoices/{id}", method = RequestMethod.PUT)
+//    InvoiceView updateInvoice(@PathVariable int id);
+
+    @RequestMapping(value = "invoices", method = RequestMethod.PUT)
+    InvoiceView updateInvoice(InvoiceView invoice);
 }

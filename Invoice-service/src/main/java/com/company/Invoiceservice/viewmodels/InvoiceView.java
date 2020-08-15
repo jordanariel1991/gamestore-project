@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
-public class InvoiceVM {
+public class InvoiceView {
 
         private int invoiceId;
         private int customerId;
@@ -47,11 +47,11 @@ public class InvoiceVM {
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
-            com.company.Invoiceservice.viewmodels.InvoiceVM invoiceVM = (com.company.Invoiceservice.viewmodels.InvoiceVM) o;
-            return getInvoiceId() == invoiceVM.getInvoiceId() &&
-                    getCustomerId() == invoiceVM.getCustomerId() &&
-                    Objects.equals(getPurchaseDate(), invoiceVM.getPurchaseDate()) &&
-                    Objects.equals(getInvItemList(), invoiceVM.getInvItemList());
+            InvoiceView invoiceView = (InvoiceView) o;
+            return getInvoiceId() == invoiceView.getInvoiceId() &&
+                    getCustomerId() == invoiceView.getCustomerId() &&
+                    Objects.equals(getPurchaseDate(), invoiceView.getPurchaseDate()) &&
+                    Objects.equals(getInvItemList(), invoiceView.getInvItemList());
         }
 
         @Override

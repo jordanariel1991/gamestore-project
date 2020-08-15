@@ -7,7 +7,7 @@ import com.company.Invoiceservice.exceptions.NotFoundException;
 import com.company.Invoiceservice.models.Invoice;
 import com.company.Invoiceservice.models.InvoiceItem;
 //import com.company.Invoiceservice.viewmodels.InvoiceVM;
-import com.company.Invoiceservice.viewmodels.InvoiceVM;
+import com.company.Invoiceservice.viewmodels.InvoiceView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,26 +29,26 @@ public class InvoiceServiceLayer {
 
 
     //helper method
-    private Invoice VMtoModel(InvoiceVM InvoiceViewModel){
+    private Invoice VMtoModel(InvoiceView InvoiceView){
         Invoice inv =  new Invoice();
-        inv.setInvoiceId(InvoiceViewModel.getInvoiceId());
-        inv.setCustomerId(InvoiceViewModel.getCustomerId());
-        inv.setPurchaseDate(InvoiceViewModel.getPurchaseDate());
+        inv.setInvoiceId(InvoiceView.getInvoiceId());
+        inv.setCustomerId(InvoiceView.getCustomerId());
+        inv.setPurchaseDate(InvoiceView.getPurchaseDate());
 
         return inv;
     }
 
-    private InvoiceVM buildInvoiceVM(Invoice inv){
-        InvoiceVM InvoiceViewModel = new InvoiceVM();
-        InvoiceViewModel.setInvoiceId(inv.getInvoiceId());
-        InvoiceViewModel.setCustomerId(inv.getCustomerId());
-        InvoiceViewModel.setPurchaseDate(inv.getPurchaseDate());
-        InvoiceViewModel.setInvItemList(invItemDao.getItemsByInvoiceId(inv.getInvoiceId()));
-        return InvoiceViewModel;
+    private InvoiceView buildInvoiceVM(Invoice inv){
+        InvoiceView InvoiceView = new InvoiceView();
+        InvoiceView.setInvoiceId(inv.getInvoiceId());
+        InvoiceView.setCustomerId(inv.getCustomerId());
+        InvoiceView.setPurchaseDate(inv.getPurchaseDate());
+        InvoiceView.setInvItemList(invItemDao.getItemsByInvoiceId(inv.getInvoiceId()));
+        return InvoiceView;
     }
 
     @Transactional
-    public InvoiceVM addInvoice(InvoiceVM IVM) {
+    public InvoiceView addInvoice(InvoiceView IVM) {
         Invoice inv = VMtoModel(IVM);
         inv = invdao.addInvoice(inv);
         IVM.setInvoiceId(inv.getInvoiceId());
@@ -59,15 +59,15 @@ public class InvoiceServiceLayer {
         return IVM;
     }
     @Transactional
-    public List<InvoiceVM>getInvoiceByCust(int custId){
+    public List<InvoiceView>getInvoiceByCust(int custId){
         List<Invoice> invoiceList =invdao.getByCustomerId(custId);
-        List<InvoiceVM> IVMList = new ArrayList<>();
+        List<InvoiceView> IVMList = new ArrayList<>();
         invoiceList.forEach(invoice -> IVMList.add(buildInvoiceVM(invoice)));
         return IVMList;
 
     }
     @Transactional
-    public InvoiceVM getInv(int invId){
+    public InvoiceView getInv(int invId){
         Invoice inv = invdao.findInvoiceById(invId);
         if(inv==null){
             throw new NotFoundException("invoice not found");
@@ -77,33 +77,33 @@ public class InvoiceServiceLayer {
         }
     }
     @Transactional
-    public InvoiceVM updateInv(InvoiceVM invoiceVM){
+    public InvoiceView updateInv(InvoiceView invoiceView){
         //locate inv
-        getInv(invoiceVM.getInvoiceId());
+        getInv(invoiceView.getInvoiceId());
         //update inv
-        invdao.updateInvoice(VMtoModel(invoiceVM));
-        List<InvoiceItem>invoiceItemList = invItemDao.getItemsByInvoiceId(invoiceVM.getInvoiceId());
+        invdao.updateInvoice(VMtoModel(invoiceView));
+        List<InvoiceItem>invoiceItemList = invItemDao.getItemsByInvoiceId(invoiceView.getInvoiceId());
         invoiceItemList.forEach(invoiceItem -> invItemDao.deleteInvoiceItemsById(invoiceItem.getInvoiceItemId()));
         //add invitems
-        invoiceVM.getInvItemList().forEach(invoiceItem -> {invoiceItem.setInvoiceId(invoiceVM.getInvoiceId());
+        invoiceView.getInvItemList().forEach(invoiceItem -> {invoiceItem.setInvoiceId(invoiceView.getInvoiceId());
         invItemDao.addInvoiceItem(invoiceItem);
         });
-        return getInv(invoiceVM.getInvoiceId());
+        return getInv(invoiceView.getInvoiceId());
 
     }
     @Transactional
-    public  List<InvoiceVM>getAllInv(){
+    public  List<InvoiceView>getAllInv(){
         List<Invoice>invoiceList =invdao.getAllInvoice();
-        List<InvoiceVM> invoiceVMList =new ArrayList<>();
-        invoiceList.forEach(invoice -> invoiceVMList.add(buildInvoiceVM(invoice)));
-        return invoiceVMList;
+        List<InvoiceView> invoiceViewList =new ArrayList<>();
+        invoiceList.forEach(invoice -> invoiceViewList.add(buildInvoiceVM(invoice)));
+        return invoiceViewList;
     }
     @Transactional
-    public List<InvoiceVM> getInvByCustId(int custId){
+    public List<InvoiceView> getInvByCustId(int custId){
         List<Invoice>invoiceList =invdao.getByCustomerId(custId);
-        List<InvoiceVM>invoiceVMList = new ArrayList<>();
-        invoiceList.forEach(invoice -> invoiceVMList.add(buildInvoiceVM(invoice)));
-        return invoiceVMList;
+        List<InvoiceView> invoiceViewList = new ArrayList<>();
+        invoiceList.forEach(invoice -> invoiceViewList.add(buildInvoiceVM(invoice)));
+        return invoiceViewList;
     }
     @Transactional
     public void deleteInvoice (int invId){

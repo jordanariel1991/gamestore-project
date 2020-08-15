@@ -12,6 +12,7 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 @EnableDiscoveryClient
 @EnableFeignClients
 @SpringBootApplication
+//need annotation for circuit breaker - might need dependency
 public class RetailApiApplication {
 
 	@Bean
