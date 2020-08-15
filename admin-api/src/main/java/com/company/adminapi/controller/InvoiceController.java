@@ -1,6 +1,7 @@
 package com.company.adminapi.controller;
 
 
+import com.company.adminapi.DTO.Invoice;
 import com.company.adminapi.service.ServiceLayer;
 import com.company.adminapi.views.InvoiceView;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,8 +44,8 @@ public class InvoiceController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public InvoiceView addInvoice(@RequestBody @Valid InvoiceView invoiceView){
-        return serviceLayer.addInvoice(invoiceView);
+    public InvoiceView addInvoice(@RequestBody @Valid Invoice invoice){
+        return serviceLayer.addInvoice(invoice);
     }
 
     @PutMapping(value = "/{id}")
